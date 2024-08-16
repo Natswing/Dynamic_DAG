@@ -15,3 +15,6 @@ class DagRequestBody(BaseModel):
     "task3": "echo vaishnavi3"
     }
     ])
+
+class DeleteDag(BaseModel):
+    dag_name: str = Field(example="example_dag")
